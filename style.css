@@ -1,0 +1,366 @@
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --white-font: #fff;
+  --transparent-font: rgba(255, 255, 255, 0.5);
+  --dark-font: #555555;
+  --darker-font: #444444;
+  --primary-color: #ce1b28;
+}
+
+html{
+  font-size: 10px;
+  font-family: 'Raleway', sans-serif;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul{
+  list-style: none;
+}
+
+body {
+  color: var(--darker-font);
+  font-family: "Raleway", sans-serif;
+  overflow-x: hidden;
+  font-size: 16px;
+  background-color: #f4f4f4;
+  background-image: linear-gradient(rgb(226, 226, 226), rgb(231, 231, 231));
+}
+
+.container {
+  width: 100%;
+  max-width: 1100px;
+  margin: auto;
+}
+
+/* Header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+  background-color: #000;
+  color: #fff;
+  padding: 1rem;
+}
+
+/* Navigation */
+.nav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  background-color: #000;
+  overflow-x: hidden;
+  padding-top: 60px;
+  transition: 0.7s;
+}
+
+.nav a {
+  display: block;
+  padding: 20px 30px;
+  font-size: 20px;
+  text-decoration: none;
+  color: #ccc;
+}
+
+.nav a:hover {
+  color: #fff;
+  transition: 0.4s;
+}
+
+.nav .close {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.slide a {
+  color: #fff;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.slide a .menu {
+  padding-left: 0.4rem;
+}
+
+.overlay {
+  background-color: #000;
+  z-index: 5;
+}
+
+/* Showcase */
+.showcase {
+  background-color: #000;
+  height: 55vh;
+  background: linear-gradient(rgba(244, 56, 56, 0.5), rgba(0, 0, 0, .8)),
+    url(/img/skyline.jpg) center no-repeat;
+  background-size: cover;
+}
+
+.showcase .showcase-container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.showcase .title {
+  font-size: 5rem;
+  font-weight: 100;
+  color: var(--white-font);
+  letter-spacing: 1px;
+  margin-bottom: 2rem;
+  text-transform: uppercase;
+}
+
+.showcase p{
+  color: var(--transparent-font);
+  width: 70%;
+  line-height: 25px;
+  font-size: 1.8rem;
+}
+
+/* Info */
+.info-title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 4rem auto;
+  width: 100%;
+}
+
+.info-header{
+  margin: 0rem auto 3rem;
+}
+
+.info-title p {
+  margin-bottom: 2rem;
+  width: 60%;
+}
+
+/* Grid */
+.grids {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  grid-gap: 4rem;
+  padding-bottom: 4rem;
+  width: 75%;
+}
+
+.grid {
+  padding: 5rem;
+  background-color: white;
+  position: relative;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.grid .icon {
+  font-size: 6rem;
+  color: var(--primary-color);
+}
+
+.grid h3{
+  margin: 2rem 0;
+  font-weight: 600;
+  width: 20rem;
+}
+
+.grid p {
+  text-align: center;
+  line-height: 1.4;
+  font-size: 1.5rem;
+}
+
+/* Info mid section */
+.info-mid{
+  background: linear-gradient(rgba(244, 56, 56, 0.5), rgba(0, 0, 0, .8)),
+    url(/img/skyline.jpg) center no-repeat fixed;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-mid{
+  color: #fff;
+  letter-spacing: 1px;
+}
+
+.info-title .p-mid{
+  width: 70%;
+  color: var(--transparent-font);
+  line-height: 1.4;
+  letter-spacing: .5px;
+}
+
+/* Grid team */
+.grid-team .quote{
+  text-align: left;
+  letter-spacing: .2px;
+  line-height: 1.5;
+  font-style: italic;
+  border-left: solid .5rem rgba(0, 0, 0, 0.25);
+  padding: 1rem 0 1rem 2rem;
+}
+
+.grid-team .team-members{
+  display: flex;
+  align-items: center;
+  margin-top: 3rem;
+}
+
+.grid-team .team-p{
+  font-size: 1.3rem;
+  display: inline;
+}
+
+.grid-team img{
+  width: 4rem;
+  height: 4rem;
+  margin-right: 1rem;
+  border-radius: 50%;
+}
+
+.grid-team span{
+  color: var(--primary-color)
+}
+
+/* Footer */
+footer{
+  background-color: #111111;
+  color: var(--transparent-font);
+  padding: 5rem;
+}
+
+footer .content{
+  display: flex;
+}
+
+.content .underline{
+  border-bottom: 1px solid var(--transparent-font);
+  padding-bottom: 1rem;
+  margin-bottom: 1rem;
+}
+
+.content li .icon{
+  display: inline-block;
+  margin: 0 1rem 0 0;
+}
+
+footer a{
+  color: var(--transparent-font);
+  font-size: 1.4rem;
+  transition: color .5s;
+}
+
+footer a:hover{
+  color: var(--primary-color);
+}
+
+footer ul li{
+  padding-bottom: 2rem;
+}
+
+footer p{
+  font-size: 1.4rem;
+  line-height: 2.5rem;
+}
+
+footer h3, h4{
+  color: var(--white-font);
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+footer .div-1{
+  width: 50%;
+  margin-bottom: 1.5rem;
+}
+
+footer .div-2{
+  width: 25%;
+  margin: 0 0 0 4rem;
+}
+
+footer .div-3{
+  width: 25%;
+  margin-left: 4rem;
+}
+
+footer .copyright{
+  border-top: 1px solid var(--transparent-font);
+  padding: 6rem 0 0 0;
+  margin-top: 3rem;
+}
+
+footer .copyright p{
+  opacity: .5;
+  text-align: center;
+}
+
+/* Media queries */
+@media only screen and (max-width: 1280px) {
+  .info-title .p-mid{
+    width: 80%;
+  }
+  
+  footer .content {
+    flex-wrap: wrap;
+  }
+
+  footer .div-1{
+    width: 100%;
+    padding-bottom: 2rem;
+  }
+
+  footer .div-2{
+    width: 40%;
+    margin-left: 0rem;;
+  }
+
+  footer .div-3{
+    width: 40%;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  footer .content{
+    flex-direction: column;
+  }
+
+  footer .div-2{
+    width: 100%;
+    margin-left: 0;
+  }
+
+  footer .div-3{
+    width: 100%;
+    margin-left: 0;
+  }
+}
