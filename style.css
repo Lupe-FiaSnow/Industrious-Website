@@ -111,7 +111,7 @@ header {
   background-color: #000;
   height: 55vh;
   background: linear-gradient(rgba(244, 56, 56, 0.5), rgba(0, 0, 0, .8)),
-    url(/img/skyline.jpg) center no-repeat;
+    url(img/skyline.jpg) center no-repeat;
   background-size: cover;
 }
 
