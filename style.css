@@ -166,7 +166,7 @@ header {
   grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
   grid-gap: 4rem;
   padding-bottom: 4rem;
-  width: 75%;
+  width: 85%;
 }
 
 .grid {
@@ -188,9 +188,6 @@ header {
 .grid h3{
   margin: 2rem 0;
   font-weight: 600;
-  width: 25rem;
-  display: flex;
-  justify-content: center;
 }
 
 .grid p {
