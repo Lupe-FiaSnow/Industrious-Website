@@ -166,7 +166,7 @@ header {
   grid-template-columns: repeat(auto-fit, minmax(27rem, 1fr));
   grid-gap: 3.5rem;
   padding-bottom: 4rem;
-  width: 85%;
+  width: 90%;
 }
 
 .grid {
