@@ -189,6 +189,8 @@ header {
   margin: 2rem 0;
   font-weight: 600;
   width: 20rem;
+  display: flex;
+  justify-content: center;
 }
 
 .grid p {
