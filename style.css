@@ -163,7 +163,7 @@ header {
 /* Grid */
 .grids {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(27rem, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
   grid-gap: 3.5rem;
   padding-bottom: 4rem;
   width: 90%;
