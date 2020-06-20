@@ -170,7 +170,7 @@ header {
 }
 
 .grid {
-  padding: 4rem;
+  padding: 5rem;
   background-color: white;
   position: relative;
   display: flex;
@@ -188,7 +188,7 @@ header {
 .grid h3{
   margin: 2rem 0;
   font-weight: 600;
-  width: 20rem;
+  width: 25rem;
   display: flex;
   justify-content: center;
 }
